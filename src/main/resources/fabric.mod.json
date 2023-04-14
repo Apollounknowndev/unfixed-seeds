@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "unfixed-seeds",
+	"version": "${version}",
+	"name": "Unfixed Seeds",
+	"description": "Allows dimension files in datapacks to use the world seed instead of a fixed seed",
+	"authors": [
+		"Apollo"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {},
+	"mixins": [
+		"unfixed-seeds.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.18.2"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "apollo.unfixed.seeds.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "NoiseChunkGeneratorMixin",
+	  "GeneratorOptionsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
