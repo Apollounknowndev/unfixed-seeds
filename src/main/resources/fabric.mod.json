@@ -10,7 +10,11 @@
 	"contact": {},
 	"license": "CC0-1.0",
 	"environment": "*",
-	"entrypoints": {},
+	"entrypoints": {
+		"main": [
+			"dev.worldgen.unfixed.seeds.UnfixedSeeds"
+		]
+	},
 	"mixins": [
 		"unfixed-seeds.mixins.json"
 	],
