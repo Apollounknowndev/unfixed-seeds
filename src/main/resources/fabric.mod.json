@@ -7,7 +7,12 @@
 	"authors": [
 		"Apollo"
 	],
-	"contact": {},
+	"contact": {
+		"homepage": "https://modrinth.com/mod/unfixed-seeds",
+		"issues": "https://github.com/AstraUnknownDev/unfixed-seeds/issues",
+		"source": "https://github.com/AstraUnknownDev/unfixed-seeds/"
+	},
+	"icon": "assets/unfixed-seeds/icon.png",
 	"license": "CC0-1.0",
 	"environment": "*",
 	"entrypoints": {
