@@ -8,6 +8,7 @@ import net.minecraft.server.MinecraftServer;
 public class UnfixedSeeds implements ModInitializer {
 
     private static void resetSeed(MinecraftServer minecraftServer) {
+        ServerSeed.LOGGER.debug("Cleared seed cache!");
         ServerSeed.SEED = null;
     }
 

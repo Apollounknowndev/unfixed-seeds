@@ -16,6 +16,7 @@ public class GeneratorOptionsMixin {
 
     @Inject(method= "<init>(JZZLnet/minecraft/util/registry/Registry;Ljava/util/Optional;)V",at=@At(value="TAIL"))
     private void unfixedSeeds$setServerSeed(long seed, boolean generateStructures, boolean bonusChest, Registry<DimensionOptions> options, Optional<String> legacyCustomOptions, CallbackInfo ci) {
+        ServerSeed.LOGGER.debug("Set seed to "+seed);
         ServerSeed.SEED = seed;
     }
 }

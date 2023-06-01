@@ -13,8 +13,11 @@ public class NoiseChunkGeneratorMixin {
             "JLnet/minecraft/util/registry/RegistryEntry;)V",at=@At("HEAD"), argsOnly = true)
     private static long unfixedSeeds$getServerSeed(long seed) {
         if (ServerSeed.SEED != null) {
+            ServerSeed.LOGGER.debug("Got seed, it is "+ServerSeed.SEED);
             return ServerSeed.SEED;
         }
+        ServerSeed.LOGGER.debug("Seed remains as "+seed);
+        ServerSeed.SEED = seed;
         return seed;
     }
 }
